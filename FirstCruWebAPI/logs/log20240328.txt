@@ -1,0 +1,169 @@
+2024-03-28 11:20:18.514 +05:30 [INF] Requesting Employee List Details...
+2024-03-28 11:20:23.541 +05:30 [INF] HTTP GET /api/Employee/getemployeelist responded 200 in 6280.4846 ms
+2024-03-28 11:21:39.200 +05:30 [INF] Requesting Employee by Id...
+2024-03-28 11:21:39.357 +05:30 [INF] HTTP GET /api/Employee/getemployeebyid responded 200 in 231.5446 ms
+2024-03-28 11:23:27.100 +05:30 [INF] Requesting  to add Employee in DB...
+2024-03-28 11:23:27.346 +05:30 [INF] HTTP POST /api/Employee/addemployee responded 200 in 610.8135 ms
+2024-03-28 11:24:05.014 +05:30 [INF] Requesting Employee List Details...
+2024-03-28 11:24:05.047 +05:30 [INF] HTTP GET /api/Employee/getemployeelist responded 200 in 33.2353 ms
+2024-03-28 11:26:00.591 +05:30 [INF] Requesting Employee List Details...
+2024-03-28 11:26:00.606 +05:30 [INF] HTTP POST /api/Employee/getemployeelist responded 200 in 26.0185 ms
+2024-03-28 11:27:37.655 +05:30 [ERR] HTTP GET /api/Employee/getemployeelist responded 500 in 270.9430 ms
+System.DivideByZeroException: Attempted to divide by zero.
+   at FirstCruWebAPI.Controllers.EmployeeController.GetEmployeeList()
+   at lambda_method72(Closure , Object )
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+2024-03-28 11:27:37.775 +05:30 [ERR] An unhandled exception has occurred while executing the request.
+System.DivideByZeroException: Attempted to divide by zero.
+   at FirstCruWebAPI.Controllers.EmployeeController.GetEmployeeList()
+   at lambda_method72(Closure , Object )
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2024-03-28 22:12:14.538 +05:30 [INF] Requesting Employee List Details...
+2024-03-28 22:12:19.987 +05:30 [INF] HTTP GET /api/Employee/getemployeelist responded 200 in 6260.3824 ms
+2024-03-28 22:12:44.421 +05:30 [INF] Requesting Employee by Id...
+2024-03-28 22:12:44.582 +05:30 [INF] HTTP GET /api/Employee/getemployeebyid responded 200 in 213.6922 ms
+2024-03-28 22:14:00.473 +05:30 [INF] HTTP GET /api/user responded 200 in 3968.5229 ms
+2024-03-28 22:14:50.001 +05:30 [INF] HTTP POST /api/user responded 200 in 879.8650 ms
+2024-03-28 22:16:00.221 +05:30 [ERR] HTTP GET /api/user responded 500 in 22.8575 ms
+System.InvalidOperationException: No authenticationScheme was specified, and there was no DefaultChallengeScheme found. The default schemes can be set using either AddAuthentication(string defaultScheme) or AddAuthentication(Action<AuthenticationOptions> configureOptions).
+   at Microsoft.AspNetCore.Authentication.AuthenticationService.ChallengeAsync(HttpContext context, String scheme, AuthenticationProperties properties)
+   at Microsoft.AspNetCore.Authorization.Policy.AuthorizationMiddlewareResultHandler.HandleAsync(RequestDelegate next, HttpContext context, AuthorizationPolicy policy, PolicyAuthorizationResult authorizeResult)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+2024-03-28 22:16:00.428 +05:30 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: No authenticationScheme was specified, and there was no DefaultChallengeScheme found. The default schemes can be set using either AddAuthentication(string defaultScheme) or AddAuthentication(Action<AuthenticationOptions> configureOptions).
+   at Microsoft.AspNetCore.Authentication.AuthenticationService.ChallengeAsync(HttpContext context, String scheme, AuthenticationProperties properties)
+   at Microsoft.AspNetCore.Authorization.Policy.AuthorizationMiddlewareResultHandler.HandleAsync(RequestDelegate next, HttpContext context, AuthorizationPolicy policy, PolicyAuthorizationResult authorizeResult)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2024-03-28 22:18:12.328 +05:30 [ERR] HTTP GET /api/Employee/getemployeelist responded 500 in 18.4040 ms
+System.InvalidOperationException: No authenticationScheme was specified, and there was no DefaultChallengeScheme found. The default schemes can be set using either AddAuthentication(string defaultScheme) or AddAuthentication(Action<AuthenticationOptions> configureOptions).
+   at Microsoft.AspNetCore.Authentication.AuthenticationService.ChallengeAsync(HttpContext context, String scheme, AuthenticationProperties properties)
+   at Microsoft.AspNetCore.Authorization.Policy.AuthorizationMiddlewareResultHandler.HandleAsync(RequestDelegate next, HttpContext context, AuthorizationPolicy policy, PolicyAuthorizationResult authorizeResult)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+2024-03-28 22:18:12.498 +05:30 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: No authenticationScheme was specified, and there was no DefaultChallengeScheme found. The default schemes can be set using either AddAuthentication(string defaultScheme) or AddAuthentication(Action<AuthenticationOptions> configureOptions).
+   at Microsoft.AspNetCore.Authentication.AuthenticationService.ChallengeAsync(HttpContext context, String scheme, AuthenticationProperties properties)
+   at Microsoft.AspNetCore.Authorization.Policy.AuthorizationMiddlewareResultHandler.HandleAsync(RequestDelegate next, HttpContext context, AuthorizationPolicy policy, PolicyAuthorizationResult authorizeResult)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2024-03-28 22:25:07.878 +05:30 [ERR] HTTP GET /api/Employee/getemployeelist responded 500 in 22.9888 ms
+System.InvalidOperationException: No authenticationScheme was specified, and there was no DefaultChallengeScheme found. The default schemes can be set using either AddAuthentication(string defaultScheme) or AddAuthentication(Action<AuthenticationOptions> configureOptions).
+   at Microsoft.AspNetCore.Authentication.AuthenticationService.ChallengeAsync(HttpContext context, String scheme, AuthenticationProperties properties)
+   at Microsoft.AspNetCore.Authorization.Policy.AuthorizationMiddlewareResultHandler.HandleAsync(RequestDelegate next, HttpContext context, AuthorizationPolicy policy, PolicyAuthorizationResult authorizeResult)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+2024-03-28 22:25:08.103 +05:30 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: No authenticationScheme was specified, and there was no DefaultChallengeScheme found. The default schemes can be set using either AddAuthentication(string defaultScheme) or AddAuthentication(Action<AuthenticationOptions> configureOptions).
+   at Microsoft.AspNetCore.Authentication.AuthenticationService.ChallengeAsync(HttpContext context, String scheme, AuthenticationProperties properties)
+   at Microsoft.AspNetCore.Authorization.Policy.AuthorizationMiddlewareResultHandler.HandleAsync(RequestDelegate next, HttpContext context, AuthorizationPolicy policy, PolicyAuthorizationResult authorizeResult)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2024-03-28 22:26:12.081 +05:30 [ERR] HTTP GET /api/Employee/getemployeelist responded 500 in 1.8973 ms
+System.InvalidOperationException: No authenticationScheme was specified, and there was no DefaultChallengeScheme found. The default schemes can be set using either AddAuthentication(string defaultScheme) or AddAuthentication(Action<AuthenticationOptions> configureOptions).
+   at Microsoft.AspNetCore.Authentication.AuthenticationService.ChallengeAsync(HttpContext context, String scheme, AuthenticationProperties properties)
+   at Microsoft.AspNetCore.Authorization.Policy.AuthorizationMiddlewareResultHandler.HandleAsync(RequestDelegate next, HttpContext context, AuthorizationPolicy policy, PolicyAuthorizationResult authorizeResult)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+2024-03-28 22:26:12.092 +05:30 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: No authenticationScheme was specified, and there was no DefaultChallengeScheme found. The default schemes can be set using either AddAuthentication(string defaultScheme) or AddAuthentication(Action<AuthenticationOptions> configureOptions).
+   at Microsoft.AspNetCore.Authentication.AuthenticationService.ChallengeAsync(HttpContext context, String scheme, AuthenticationProperties properties)
+   at Microsoft.AspNetCore.Authorization.Policy.AuthorizationMiddlewareResultHandler.HandleAsync(RequestDelegate next, HttpContext context, AuthorizationPolicy policy, PolicyAuthorizationResult authorizeResult)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2024-03-28 22:27:06.500 +05:30 [ERR] HTTP GET /api/Employee/getemployeebyid responded 500 in 11.2265 ms
+System.InvalidOperationException: No authenticationScheme was specified, and there was no DefaultChallengeScheme found. The default schemes can be set using either AddAuthentication(string defaultScheme) or AddAuthentication(Action<AuthenticationOptions> configureOptions).
+   at Microsoft.AspNetCore.Authentication.AuthenticationService.ChallengeAsync(HttpContext context, String scheme, AuthenticationProperties properties)
+   at Microsoft.AspNetCore.Authorization.Policy.AuthorizationMiddlewareResultHandler.HandleAsync(RequestDelegate next, HttpContext context, AuthorizationPolicy policy, PolicyAuthorizationResult authorizeResult)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+2024-03-28 22:27:06.515 +05:30 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: No authenticationScheme was specified, and there was no DefaultChallengeScheme found. The default schemes can be set using either AddAuthentication(string defaultScheme) or AddAuthentication(Action<AuthenticationOptions> configureOptions).
+   at Microsoft.AspNetCore.Authentication.AuthenticationService.ChallengeAsync(HttpContext context, String scheme, AuthenticationProperties properties)
+   at Microsoft.AspNetCore.Authorization.Policy.AuthorizationMiddlewareResultHandler.HandleAsync(RequestDelegate next, HttpContext context, AuthorizationPolicy policy, PolicyAuthorizationResult authorizeResult)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2024-03-28 23:11:05.932 +05:30 [INF] HTTP GET /api/user responded 200 in 4700.9036 ms
+2024-03-28 23:17:57.501 +05:30 [INF] HTTP GET /api/user responded 200 in 156.4924 ms
+2024-03-28 23:17:57.586 +05:30 [INF] HTTP GET /api/user responded 200 in 76.7030 ms
+2024-03-28 23:18:07.533 +05:30 [INF] HTTP GET /api/user responded 200 in 4.0780 ms
+2024-03-28 23:18:07.539 +05:30 [INF] HTTP GET /api/user responded 200 in 2.4678 ms
+2024-03-28 23:22:15.426 +05:30 [INF] HTTP GET /api/user responded 200 in 9.0101 ms
+2024-03-28 23:22:20.308 +05:30 [INF] HTTP GET /api/user responded 200 in 2.1088 ms
+2024-03-28 23:22:20.318 +05:30 [INF] HTTP GET /api/user responded 200 in 0.9694 ms
+2024-03-28 23:22:27.977 +05:30 [INF] HTTP GET /api/user responded 200 in 4.7960 ms
+2024-03-28 23:22:27.985 +05:30 [INF] HTTP GET /api/user responded 200 in 1.0759 ms
+2024-03-28 23:22:28.887 +05:30 [INF] HTTP GET /api/user responded 200 in 6.7781 ms
+2024-03-28 23:22:28.903 +05:30 [INF] HTTP GET /api/user responded 200 in 4.3371 ms
+2024-03-28 23:23:02.359 +05:30 [INF] HTTP GET /api/user responded 200 in 11.0679 ms
+2024-03-28 23:23:22.329 +05:30 [INF] HTTP GET /api/user responded 200 in 3.0575 ms
+2024-03-28 23:24:07.341 +05:30 [INF] HTTP GET /api/user responded 200 in 3.2111 ms
+2024-03-28 23:24:43.567 +05:30 [INF] HTTP GET /api/user responded 200 in 20.8781 ms
+2024-03-28 23:24:46.688 +05:30 [INF] HTTP GET /api/user responded 200 in 3.5454 ms
+2024-03-28 23:24:46.699 +05:30 [INF] HTTP GET /api/user responded 200 in 7.3335 ms
+2024-03-28 23:24:49.206 +05:30 [INF] HTTP GET /api/user responded 200 in 4.3132 ms
+2024-03-28 23:24:49.231 +05:30 [INF] HTTP GET /api/user responded 200 in 14.4568 ms
+2024-03-28 23:24:51.318 +05:30 [INF] HTTP GET /api/user responded 200 in 12.1658 ms
+2024-03-28 23:24:51.325 +05:30 [INF] HTTP GET /api/user responded 200 in 2.3992 ms
+2024-03-28 23:26:18.162 +05:30 [INF] HTTP GET /api/user responded 200 in 22.5472 ms
+2024-03-28 23:26:18.173 +05:30 [INF] HTTP GET /api/user responded 200 in 1.0803 ms
+2024-03-28 23:27:21.236 +05:30 [INF] HTTP GET /api/user responded 200 in 11.5389 ms
+2024-03-28 23:27:24.621 +05:30 [INF] HTTP GET /api/user responded 200 in 3.6738 ms
+2024-03-28 23:27:24.638 +05:30 [INF] HTTP GET /api/user responded 200 in 4.9049 ms
+2024-03-28 23:27:27.479 +05:30 [INF] HTTP GET /api/user responded 200 in 12.4025 ms
+2024-03-28 23:27:27.496 +05:30 [INF] HTTP GET /api/user responded 200 in 11.3778 ms
+2024-03-28 23:27:27.801 +05:30 [INF] HTTP GET /api/user responded 200 in 2.8590 ms
+2024-03-28 23:27:27.812 +05:30 [INF] HTTP GET /api/user responded 200 in 7.8706 ms
+2024-03-28 23:27:27.983 +05:30 [INF] HTTP GET /api/user responded 200 in 15.0502 ms
+2024-03-28 23:27:27.988 +05:30 [INF] HTTP GET /api/user responded 200 in 2.2517 ms
+2024-03-28 23:27:28.250 +05:30 [INF] HTTP GET /api/user responded 200 in 4.8640 ms
+2024-03-28 23:27:28.254 +05:30 [INF] HTTP GET /api/user responded 200 in 1.7170 ms
+2024-03-28 23:27:35.984 +05:30 [INF] HTTP GET /api/user responded 200 in 10.1317 ms
+2024-03-28 23:27:35.998 +05:30 [INF] HTTP GET /api/user responded 200 in 10.0356 ms
+2024-03-28 23:29:16.191 +05:30 [INF] HTTP GET /api/user responded 200 in 4.2434 ms
+2024-03-28 23:29:16.207 +05:30 [INF] HTTP GET /api/user responded 200 in 1.9620 ms
+2024-03-28 23:29:16.352 +05:30 [INF] HTTP GET /api/user responded 200 in 1.5549 ms
+2024-03-28 23:29:16.358 +05:30 [INF] HTTP GET /api/user responded 200 in 1.5538 ms
